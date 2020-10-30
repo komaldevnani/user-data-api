@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+  class UsersController < ApplicationController
   def create
     @user = User.create!(user_params)
     json_response(@user, :created)
